@@ -1,0 +1,14 @@
+<script>
+    let casinoBet = Math.floor(Math.random() * 1000)
+    console.log(casinoBet)
+    const playerBet = +prompt('Введите число от 0 до 999')
+    if ( isNaN(playerBet) ) {
+        alert('Вы ввели не число!')
+    } else if ( playerBet === casinoBet ) {
+        alert('Поздравляем! Вы угадали!')
+    } else if ( playerBet > casinoBet ) {
+        alert('Ваше число больше загаданного')
+    } else {
+        alert('Ваше число меньше загаданного')
+    }
+  </script>
